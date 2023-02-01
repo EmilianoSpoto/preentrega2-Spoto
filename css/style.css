@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*------- HEADER -----*/
+/**header h1 {
+    font-size: 60px;
+    font-weight: 200;
+    font-style: oblique;
+    color: white;
+}**/
+
+
+header{  
+    background-color: white;
+    position:fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+header div nav ul{
+    list-style: none;
+
+}
+header div nav ul{
+    list-style: none;
+    text-align: right;
+}
+header div nav ul li{
+    margin: 10px;
+    display: inline-block;
+    
+}
+
+header div nav ul li a{
+    text-decoration: none;
+    color: #1BA5DE;
+    font-size: 25px;
+}
+
+
+header div img {
+    width: 380px;
+    height: 80px;
+}
+
+
+/*------- MAIN -------*/
+/**------ INDEX -------**/
+.set{
+height: 100px;
+}
+.hero {
+    width: 100%;
+    height: calc(100vh - 100px);
+    text-align: center;
+    color: white;
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero h1{
+    font-size: 80px;
+    text-shadow: 10px 10px 10px blue;
+}
+.hero h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-shadow: 10px 10px 10px blue;
+}
+.hero a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: darkblue;
+    padding: 10px 15px;
+    font-size: 30px;
+    width: 200px;
+
+    
+}
+.resumen {
+    height: 250px;
+    position: relative;
+    text-align: center;
+    background-color: #1BA5DE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resumen h2{
+    display: inline;
+    position: absolute;
+    bottom:  150px;
+}
+.resumen p {
+    display: inline;
+    position: absolute;
+    bottom: 50px;
+}
+
+.numeros{
+    background-image: url(../img/pattern02.png);
+    background-size: cover;
+}
+.numeros-titulo{
+    text-align: center;
+    padding-top: 15px;
+}
+.numeros-{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.numeros-item {
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    justify-content: space-around;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center ;
+    
+}
+.numeros-item p{
+    text-align: center;
+}
+.numeros-item div{
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center ;
+}
+.numeros-item div img{
+    width: 100px;
+    height: 100px;
+
+}
+.numeros-item-numero{
+    position: absolute;
+    top: 25px;
+    font-size: 40px;
+}
+.numeros-item-medida{
+    position: absolute;
+    bottom: -5px;
+
+}
+.clientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    background-image: url(../img/back-clientes.png);
+    background: position -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.clientes h2{
+    text-align: center;
+    padding-top: 15px;
+}
+.clientes div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+.clientes div a img{
+    height: 150px;
+    width: 150px;
+}
+
+
+/*------FOTTER--------*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+.pie-marca{color:#1BA5DE;
+height: 50px;
+width: 100px;
+display: inline;
+justify-content: end;
+align-items: center;}
+
+.pie-marca h2{font-size: 30px;}
+.pie-marca h3{font-size: 10px;}
+
+.pie div{text-align: center;}
+.pie div div img{
+        width: 50px;
+        height: 50px;
+}
+.pin{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+.pin img{
+    margin: 10px;
+    height: 35px;
+    width: 20px;
+}
+
+/*? -------- SERVICIOS -------- */ 
+
+.servicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/pattern07.png);
+    height: 500px;
+}
+.servicio-descripcion{width: 350px;}
+.servicio-video{
+    width: 700px;
+}
+.opciones {
+    display: flex;
+}
+.opciones div {
+    width: 25%;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.opciones div p{
+    padding: 10px;
+    
+}
+.opciones div img{
+    width: 150px;
+    height: 150px;
+}
+.opciones-a{
+    background-color: #D93612;
+}
+.opciones-b{
+    background-color:#1BA5DE ;
+}
+
+/*? --------- CONTACTO --------*/
+.main-contacto{
+    background-image: url(../img/pattern03.png);
+    background-size: cover;
+}
+.contacto-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 280px;
+    
+}
+.contacto-form div div{
+    margin: 2px;
+}
+.contacto-form div div p{
+    display: inline;
+}
+.contacto-form div div div{
+    display: inline;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info iframe{
+    margin: 20px;
+}
+.info div{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start ;
+}
+.producto-a{
+    background-color:#1BA5DE;
+    display: flex;
+
+
+}
+.producto-b{
+    display: flex;
+}
+.producto div div img{
+    height: 150px;
+    width: 150px;
+}
