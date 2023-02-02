@@ -2,8 +2,8 @@
 
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -11,22 +11,43 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 /*------- HEADER -----*/
-/**header h1 {
-    font-size: 60px;
-    font-weight: 200;
-    font-style: oblique;
-    color: white;
-}**/
-
-
 header{  
     background-color: white;
     position:fixed;
     z-index: 100;
     width: 100%;
     height: 100px;
+    padding: 0px;
 }
-header div{
+nav{background-color: white;}
+
+/*--NUEVO NAVBAR--*/
+
+.container-fluid {
+    padding: 0px;
+}
+.btn {
+    color: #1BA5DE;
+    border-color: #1BA5DE;
+    transition: 0.5s;
+}
+.btn:hover {
+    color: white;
+    background-color: #1BA5DE;
+}
+.nav-item {
+    font-size: 20px;
+}
+.navbar-nav .nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.d-flex{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*--header div{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -44,16 +65,10 @@ header div nav ul li{
     margin: 10px;
     display: inline-block;
     
-}
-
-header div nav ul li a{
-    text-decoration: none;
-    color: #1BA5DE;
-    font-size: 25px;
-}
+}*/
 
 
-header div img {
+header nav div a img {
     width: 380px;
     height: 80px;
 }
