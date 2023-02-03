@@ -111,6 +111,12 @@ height: 100px;
     padding: 10px 15px;
     font-size: 30px;
     width: 200px;
+    transition: 0.5s;
+}
+.hero a:hover {
+    color: white;
+    background-color: #1BA5DE;
+    scale: 1.1;
 
     
 }
@@ -342,6 +348,77 @@ align-items: center;}
         width: 90%;}
     }
 
+/*? --------- PRODUCTOS --------*/
+.main-producto{background-image: url(../img/pattern01.png);}
+.producto{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "texto1 texto1 img1"
+    "img2 texto2 texto2"
+    "texto3 texto3 img3"
+    "img4 texto4 texto4"
+    ;
+}
+.texto1{
+    grid-area: texto1;
+}
+.texto2{
+    grid-area: texto2;
+}
+.texto3{
+    grid-area: texto3;
+}
+.texto4{
+    grid-area: texto4;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+
+
+.producto div img{
+    width: 100%
+}
+
+/*! ------- MEDIA QUERY ------- */
+@media screen and (max-width: 750px) {
+    .producto div h2{
+        font-size: 24px;}
+    .producto div p{
+    font-size: 12px;}    
+}
+
+@media screen and (max-width: 600px) {
+    .producto{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img1"
+        "texto1"
+        "img2"
+        "texto2"
+        "img3"
+        "texto3"
+        "img4"
+        "texto4"
+        ;}   
+}
+
+
+
 /*? --------- CONTACTO --------*/
 .main-contacto{
     background-image: url(../img/pattern03.png);
@@ -391,4 +468,11 @@ align-items: center;}
 .producto div div img{
     height: 150px;
     width: 150px;
+}
+
+/*? --------- NOSOTROS --------*/
+
+.equipo img{
+    width: 200px;
+    height: 200px;
 }
