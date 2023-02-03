@@ -115,8 +115,6 @@ height: 100px;
     
 }
 .resumen {
-    height: 250px;
-    position: relative;
     text-align: center;
     background-color: #1BA5DE;
     display: flex;
@@ -125,13 +123,11 @@ height: 100px;
 }
 .resumen h2{
     display: inline;
-    position: absolute;
-    bottom:  150px;
+    margin-top: 10px;
 }
 .resumen p {
     display: inline;
-    position: absolute;
-    bottom: 50px;
+    margin: 10px;
 }
 
 .numeros{
@@ -187,11 +183,11 @@ height: 100px;
     bottom: -5px;
 
 }
+
 .clientes{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 300px;
     background-image: url(../img/back-clientes.png);
     background: position -50px;
     background-repeat: no-repeat;
@@ -205,31 +201,42 @@ height: 100px;
 .clientes div{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 .clientes div a img{
     height: 150px;
     width: 150px;
+    margin: 10px;
+
 }
 
 
-/*------FOTTER--------*/
+/*------FOOTER--------*/
 footer{
     display: flex;
     justify-content: space-around;
     align-items:flex-end;
+    flex-wrap: wrap;
+    background-color: #d5effa;
 }
-.pie-marca{color:#1BA5DE;
-height: 50px;
-width: 100px;
+.pie-marca{
+color:#1BA5DE;
+
 display: inline;
 justify-content: end;
 align-items: center;}
 
 .pie-marca h2{font-size: 30px;}
-.pie-marca h3{font-size: 10px;}
+.pie-marca h3{font-size: 15px;}
 
-.pie div{text-align: center;}
+.pie div{
+    text-align: center;
+    width: 250px;
+    margin: 5px;
+}
 .pie div div img{
         width: 50px;
         height: 50px;
@@ -244,6 +251,27 @@ align-items: center;}
     height: 35px;
     width: 20px;
 }
+/*! ------- MEDIA QUERY ------- */
+@media screen and (max-width: 957px) {
+    .hero h1{
+        font-size: 65px;}
+    .hero h2{
+    font-size: 35px;}    
+}
+@media screen and (max-width: 500px) {
+    .hero h1{
+        font-size: 45px;}
+        .hero h2{
+            font-size: 28px;}
+    .hero a {
+        padding: 10px 15px;
+        font-size: 20px;
+        width: 130px;}  
+    header nav div a img {
+        width: 285px;
+        height: 60px;
+    }
+}
 
 /*? -------- SERVICIOS -------- */ 
 
@@ -251,28 +279,50 @@ align-items: center;}
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    
     background-image: url(../img/pattern07.png);
-    height: 500px;
+    
 }
-.servicio-descripcion{width: 350px;}
-.servicio-video{
-    width: 700px;
+.servicio-descripcion{width: 300px;}
+.servicio-descripcion h2{
+    margin:10px;
+    text-align: center;
+}
+.servicio-descripcion p{
+    text-align: center;
+}
+.servicio-video video{
+    width:100%;
+    max-width:600px;
+    max-height: 400px;
 }
 .opciones {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2bdeff;
 }
-.opciones div {
-    width: 25%;
-    height: 500px;
+
+.opciones div{
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
+    min-width: 300px;
+    width: 20%;
+    margin: 5px;
+    height: 575px
 }
 .opciones div p{
     padding: 10px;
-    
+    font-size: 14px;
+}
+.opciones div h2 {
+    font-size: 27px;
+    margin: 5px;
 }
 .opciones div img{
     width: 150px;
@@ -284,6 +334,13 @@ align-items: center;}
 .opciones-b{
     background-color:#1BA5DE ;
 }
+/*! ------- MEDIA QUERY ------- */
+@media screen and (max-width: 899px) {
+    .servicio-descripcion{
+    width: 90%;}
+    .servicio-video{
+        width: 90%;}
+    }
 
 /*? --------- CONTACTO --------*/
 .main-contacto{
