@@ -230,7 +230,6 @@ footer{
 }
 .pie-marca{
 color:#1BA5DE;
-
 display: inline;
 justify-content: end;
 align-items: center;}
@@ -286,7 +285,6 @@ align-items: center;}
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    
     background-image: url(../img/pattern07.png);
     
 }

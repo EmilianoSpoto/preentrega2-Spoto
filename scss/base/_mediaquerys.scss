@@ -1,0 +1,51 @@
+/*! -------   MEDIA QUERY --------*/ 
+
+@media screen and (max-width: 957px) {
+    .hero h1{
+        font-size: 65px;}
+    .hero h2{
+    font-size: 35px;}    
+}
+@media screen and (max-width: 500px) {
+    .hero h1{
+        font-size: 45px;}
+        .hero h2{
+            font-size: 28px;}
+    .hero a {
+        padding: 10px 15px;
+        font-size: 20px;
+        width: 130px;}  
+    header nav div a img {
+        width: 285px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 899px) {
+    .servicio-descripcion{
+    width: 90%;}
+    .servicio-video{
+        width: 90%;}
+    }
+@media screen and (max-width: 750px) {
+    .producto div h2{
+        font-size: 24px;}
+    .producto div p{
+    font-size: 12px;}}
+
+@media screen and (max-width: 600px) {
+    .main-producto .producto{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "img1"
+            "texto1"
+            "img2"
+            "texto2"
+            "img3"
+            "texto3"
+            "img4"
+            "texto4"
+            ;}}
+
+
+

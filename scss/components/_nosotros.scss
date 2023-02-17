@@ -1,0 +1,49 @@
+.nosotros{
+    background-image: url(../img/pattern03.png);
+    background-size: cover;
+    .historia{
+        text-align: center;
+        margin: 10px;
+        width: 90%;
+    }
+    .equipo{
+        text-align: center;
+        div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 320px;
+                width: 320px;
+                margin: 5px;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                img{
+                    margin: 5px;
+                    height: 120px;
+                    width: 120px;
+                }
+            }
+        }
+    }
+    .myv{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            width: 350px;
+            padding: 5px;
+            text-align: center;
+        }
+    }
+
+}

@@ -1,0 +1,60 @@
+.main-contacto{
+    background-image: url(../img/pattern03.png);
+    background-size: cover;
+    .contacto{
+        form{
+            div{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                .contacto-form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 280px;
+                    width: 350px;
+                
+                    // h2{}
+                    div{margin: 2px;}
+                    div{
+                        p{ display: inline;}
+                        div{ display: inline;}
+                    }
+                    }
+                
+            }
+            .contacto-consulta{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 350px;
+                .contacto-consulta-cuadro{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    textarea{height: 150px;}
+                }
+            }
+        }
+    }
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    div{
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:flex-start ;
+        // h3{}
+        // p{}
+    }
+    iframe{margin: 20px;}
+}
