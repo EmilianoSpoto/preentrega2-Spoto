@@ -3,12 +3,10 @@ footer{
     justify-content: space-around;
     align-items:flex-end;
     flex-wrap: wrap;
-    background-color: #d5effa;
+    background-color: $color-secundario;
     .pie-marca{
         color: $color-principal;
-        display: inline;
-        justify-content: end;
-        align-items: center;
+        @include flex(inline, end, center);
         h2{
             font-size: 30px;
         }
@@ -25,13 +23,13 @@ footer{
             height: 35px;
             width: 20px;
         }
-        /*p{}*/
+        
     }
     .redes{
         text-align: center;
         width: 250px;
         margin: 5px;
-        /*p{}*/
+        
         div{
             a{
                 img{

@@ -9,16 +9,12 @@
     .equipo{
         text-align: center;
         div{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @include flex(flex, space-around, center);
             flex-wrap: wrap;
             text-align: center;
             div{
-                display: flex;
+                @include flex(flex, space-between, center);
                 flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
                 height: 320px;
                 width: 320px;
                 margin: 5px;
@@ -35,9 +31,7 @@
     }
     .myv{
         width: 90%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(flex, space-around, center);
         flex-wrap: wrap;
         div{
             width: 350px;

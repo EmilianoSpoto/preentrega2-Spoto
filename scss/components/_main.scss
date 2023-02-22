@@ -8,10 +8,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
+    @include flex(flex, space-around, center);
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     h1{
         font-size: 80px;
         text-shadow: 10px 10px 10px blue;
@@ -69,19 +67,15 @@
             display:inline-block;
             justify-content: space-around;
             margin: 20px;
-            display: flex;
+            @include flex(flex, space-around, center);
             flex-direction: column;
-            justify-content: space-around;
-            align-items:center ;
             .numeros-item-{
                 text-align: center;
                 position: relative;
                 width: 100px;
                 height: 100px;
-                display: flex;
+                @include flex(flex, space-around, center);
                 flex-direction: column;
-                justify-content: space-around;
-                align-items:center ;
                 .numeros-item-numero{
                     position: absolute;
                     top: 25px;

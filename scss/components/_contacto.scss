@@ -4,15 +4,11 @@
     .contacto{
         form{
             div{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
+                @include flex(flex, space-around, center);
                 flex-wrap: wrap;
                 .contacto-form{
-                    display: flex;
+                    @include flex(flex, space-around, center);
                     flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
                     height: 280px;
                     width: 350px;
                 
@@ -26,16 +22,12 @@
                 
             }
             .contacto-consulta{
-                display: flex;
+                @include flex(flex, space-around, center);
                 flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
                 width: 350px;
                 .contacto-consulta-cuadro{
-                    display: flex;
+                    @include flex(flex, space-around, center);
                     flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
                     textarea{height: 150px;}
                 }
             }
@@ -43,18 +35,12 @@
     }
 }
 .info{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(flex, space-around, center);
     flex-wrap: wrap;
     div{
         height: 250px;
-        display: flex;
+        @include flex(flex, space-around, flex-start);
         flex-direction: column;
-        justify-content: space-around;
-        align-items:flex-start ;
-        // h3{}
-        // p{}
     }
     iframe{margin: 20px;}
 }

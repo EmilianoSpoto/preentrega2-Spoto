@@ -1,7 +1,5 @@
-.servicio{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.servicio{        
+    @include flex(flex, space-around, center);
     flex-wrap: wrap;
     background-image: url(../img/pattern07.png);
     .servicio-descripcion{
@@ -21,18 +19,14 @@
     }
 }
 .opciones{
-    display: flex;
+    @include flex(flex, space-around, center);
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #2bdeff;
+    background-color: $color-secundario;
     .opciones-a{
-        background-color: #D93612;
+        background-color: $color-terc;
         text-align: center;
-        display: flex;
+        @include flex(flex, space-around, center);
         flex-direction: column;
-        justify-content:space-around;
-        align-items: center;
         min-width: 300px;
         width: 20%;
         margin: 5px;
@@ -50,12 +44,10 @@
             font-size: 14px;}
     }
     .opciones-b{
-        background-color: #D93612;
+        background-color: $color-terc;
         text-align: center;
-        display: flex;
+        @include flex(flex, space-around, center);
         flex-direction: column;
-        justify-content:space-around;
-        align-items: center;
         min-width: 300px;
         width: 20%;
         margin: 5px;

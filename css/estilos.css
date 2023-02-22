@@ -21,11 +21,7 @@ header {
   header nav {
     background-color: white; }
     header nav .container-fluid {
-      padding: 0px;
-      /*button{
-                span{
-                }
-            }*/ }
+      padding: 0px; }
       header nav .container-fluid a img {
         width: 380px;
         height: 80px; }
@@ -39,8 +35,7 @@ header {
             padding-left: 10px; }
       header nav .container-fluid div .d-flex {
         padding-right: 10px;
-        padding-left: 10px;
-        /*input{}*/ }
+        padding-left: 10px; }
         header nav .container-fluid div .d-flex .btn {
           color: #1BA5DE;
           border-color: #1BA5DE;
@@ -60,9 +55,9 @@ header {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .hero h1 {
     font-size: 80px;
     text-shadow: 10px 10px 10px blue; }
@@ -114,18 +109,18 @@ header {
       justify-content: space-around;
       margin: 20px;
       display: flex;
-      flex-direction: column;
       justify-content: space-around;
-      align-items: center; }
+      align-items: center;
+      flex-direction: column; }
       .numeros .numeros- .numeros-item .numeros-item- {
         text-align: center;
         position: relative;
         width: 100px;
         height: 100px;
         display: flex;
-        flex-direction: column;
         justify-content: space-around;
-        align-items: center; }
+        align-items: center;
+        flex-direction: column; }
         .numeros .numeros- .numeros-item .numeros-item- .numeros-item-numero {
           position: absolute;
           top: 25px;
@@ -179,8 +174,7 @@ footer {
   footer .pin {
     text-align: center;
     width: 250px;
-    height: 100px;
-    /*p{}*/ }
+    height: 100px; }
     footer .pin img {
       margin: 10px;
       height: 35px;
@@ -188,8 +182,7 @@ footer {
   footer .redes {
     text-align: center;
     width: 250px;
-    margin: 5px;
-    /*p{}*/ }
+    margin: 5px; }
     footer .redes div a img {
       width: 50px;
       height: 50px; }
@@ -204,9 +197,9 @@ footer {
     flex-wrap: wrap; }
     .main-contacto .contacto form div .contacto-form {
       display: flex;
-      flex-direction: column;
       justify-content: space-around;
       align-items: center;
+      flex-direction: column;
       height: 280px;
       width: 350px; }
       .main-contacto .contacto form div .contacto-form div {
@@ -217,15 +210,15 @@ footer {
         display: inline; }
   .main-contacto .contacto form .contacto-consulta {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     width: 350px; }
     .main-contacto .contacto form .contacto-consulta .contacto-consulta-cuadro {
       display: flex;
-      flex-direction: column;
       justify-content: space-around;
-      align-items: center; }
+      align-items: center;
+      flex-direction: column; }
       .main-contacto .contacto form .contacto-consulta .contacto-consulta-cuadro textarea {
         height: 150px; }
 
@@ -237,9 +230,9 @@ footer {
   .info div {
     height: 250px;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start; }
+    align-items: flex-start;
+    flex-direction: column; }
   .info iframe {
     margin: 20px; }
 
@@ -260,9 +253,9 @@ footer {
       text-align: center; }
       .nosotros .equipo div div {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
         height: 320px;
         width: 320px;
         margin: 5px;
@@ -332,17 +325,17 @@ footer {
 
 .opciones {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-around;
-  background-color: #2bdeff; }
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #d5effa; }
   .opciones .opciones-a {
     background-color: #D93612;
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     min-width: 300px;
     width: 20%;
     margin: 5px;
@@ -360,9 +353,9 @@ footer {
     background-color: #D93612;
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     min-width: 300px;
     width: 20%;
     margin: 5px;

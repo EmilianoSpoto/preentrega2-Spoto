@@ -1,2 +1,13 @@
 
 $color-principal:  #1BA5DE;
+$color-secundario: #d5effa;
+$color-terc: #D93612;
+
+//* MIXIN 
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
